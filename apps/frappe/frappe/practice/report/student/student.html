@@ -1,0 +1,21 @@
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Student Name</th>
+            <th>Roll Number</th>
+            <th>Department</th>
+            <th>Joining Date</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <% for (var i = 0; i < data.length; i++) { %>
+            <tr>
+                <td><%= data[i].student_name %></td>
+                <td><%= data[i].roll_number %></td>
+                <td><%= data[i].department %></td>
+                <td><%= dateutil.str_to_user(data[i].joining_date) %></td>
+            </tr>
+        <% } %>
+    </tbody>
+</table>
