@@ -4,3 +4,6 @@ Form Dict: {'task_subject': 'sample', 'cmd': 'aerele_assignment.api.create_task'
 2026-08-27 15:09:15,412 ERROR frappe New Exception collected in error log
 Site: practice.localhost
 Form Dict: {'task_subject': 'sample', 'cmd': 'aerele_assignment.api.create_task'}
+2026-08-27 16:00:24,911 ERROR frappe New Exception collected in error log
+Site: practice.localhost
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Data Import","name":"new-data-import-qnjrjdkdpj","__islocal":1,"__unsaved":1,"owner":"Administrator","import_type":"Insert New Records","use_csv_sniffer":0,"custom_delimiters":0,"delimiter_options":",;\\\\t|","status":"Pending","submit_after_import":0,"mute_emails":1,"show_failed_logs":0,"reference_doctype":"Test Doc"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}

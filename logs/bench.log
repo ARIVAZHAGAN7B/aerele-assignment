@@ -566,3 +566,10 @@
 2026-08-27 15:00:43,913 INFO /home/arivu/.local/bin/bench --site practice.localhost console
 2026-08-27 15:24:33,061 INFO /home/arivu/.local/bin/bench pip show click
 2026-08-27 15:24:45,035 INFO /home/arivu/.local/bin/bench hello-app
+2026-08-27 15:46:21,945 INFO /home/arivu/.local/bin/bench start
+2026-08-27 15:46:37,760 INFO /home/arivu/.local/bin/bench setup production arivu
+2026-08-27 15:46:37,761 WARNING superuser privileges required for this command
+2026-08-27 15:47:41,081 INFO /home/arivu/.local/bin/bench setup production arivu
+2026-08-27 15:47:41,105 DEBUG sudo /home/arivu/.local/share/uv/tools/frappe-bench/bin/python -m pip install ansible
+2026-08-27 15:47:41,157 WARNING sudo /home/arivu/.local/share/uv/tools/frappe-bench/bin/python -m pip install ansible executed with exit code 1
+2026-08-27 15:47:41,158 WARNING /home/arivu/.local/bin/bench setup production arivu executed with exit code 1
