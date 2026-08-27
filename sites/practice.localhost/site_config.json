@@ -1,0 +1,11 @@
+{
+ "db_name": "_d652df975b7b000b",
+ "db_password": "cygyTK9ttzkIm9Bt",
+ "db_type": "mariadb",
+ "db_user": "_d652df975b7b000b",
+ "developer_mode": "1",
+ "installed_apps": [
+  "frappe",
+  "scheduler_practice"
+ ]
+}
