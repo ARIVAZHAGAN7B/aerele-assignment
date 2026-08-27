@@ -1700,3 +1700,27 @@ ALTER TABLE `tabEvent Item` ADD COLUMN `item_name` varchar(140), ADD COLUMN `qty
 ALTER TABLE `tabEvent Practice` ADD COLUMN `title` varchar(140), ADD COLUMN `description` text, ADD COLUMN `status` varchar(140), ADD COLUMN `event_date` varchar(140), ADD COLUMN `amount` decimal(21,9) NOT NULL DEFAULT 0.0, ADD COLUMN `email` varchar(140), ADD COLUMN `phone` varchar(140), ADD COLUMN `student` varchar(140), ADD COLUMN `items` varchar(140)
 2026-08-26 11:12:22,444 WARNING database DDL Query made to DB:
 ALTER TABLE `tabEvent Practice` ADD UNIQUE INDEX IF NOT EXISTS title (`title`)
+2026-08-27 13:15:25,977 WARNING database DDL Query made to DB:
+create table `tabTest Document` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus tinyint not null default '0',
+			idx int not null default '0',
+			`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+index creation(creation))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2026-08-27 13:20:50,930 WARNING database DDL Query made to DB:
+ALTER TABLE `tabTest Document` ADD COLUMN `description` longtext
+2026-08-27 13:21:53,425 WARNING database DDL Query made to DB:
+create sequence if not exists test_document_id_seq nocache nocycle
+2026-08-27 13:21:53,439 WARNING database DDL Query made to DB:
+ALTER TABLE `tabTest Document` MODIFY `name` bigint

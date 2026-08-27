@@ -6,6 +6,7 @@
  "developer_mode": "1",
  "installed_apps": [
   "frappe",
-  "scheduler_practice"
+  "scheduler_practice",
+  "aerele_assignment"
  ]
 }

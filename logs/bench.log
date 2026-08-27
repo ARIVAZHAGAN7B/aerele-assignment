@@ -467,3 +467,29 @@
 2026-08-27 11:23:06,436 INFO /home/arivu/.local/bin/bench watch
 2026-08-27 11:23:06,440 INFO /home/arivu/.local/bin/bench socketio
 2026-08-27 12:00:01,240 INFO /home/arivu/.local/bin/bench --verbose --site all backup
+2026-08-27 13:05:09,233 INFO /home/arivu/.local/bin/bench --site practice.localhost install-app custom
+2026-08-27 13:07:21,477 INFO /home/arivu/.local/bin/bench remove-app custom
+2026-08-27 13:07:21,736 INFO /home/arivu/.local/bin/bench --site all list-apps --format json
+2026-08-27 13:07:23,229 INFO /home/arivu/.local/bin/bench --site practice.localhost list-apps
+2026-08-27 13:07:24,359 DEBUG cd /home/arivu/frappe-v16-bench && uv pip uninstall custom --python /home/arivu/frappe-v16-bench/env/bin/python
+2026-08-27 13:07:24,411 INFO App moved from apps/custom to archived/apps/custom-2026-08-27
+2026-08-27 13:07:34,593 INFO /home/arivu/.local/bin/bench new-app aerele-assignment
+2026-08-27 13:07:34,608 LOG creating new app aerele_assignment
+2026-08-27 13:07:52,284 LOG Installing aerele_assignment
+2026-08-27 13:07:52,285 DEBUG cd /home/arivu/frappe-v16-bench && uv pip install --quiet -e /home/arivu/frappe-v16-bench/apps/aerele_assignment  --python /home/arivu/frappe-v16-bench/env/bin/python
+2026-08-27 13:07:53,120 DEBUG bench build --app aerele_assignment
+2026-08-27 13:07:53,328 INFO /home/arivu/.local/bin/bench build --app aerele_assignment
+2026-08-27 13:08:10,388 INFO /home/arivu/.local/bin/bench --site install-app aerele-assignment
+2026-08-27 13:08:22,349 INFO /home/arivu/.local/bin/bench --site install-app aerele_assignment
+2026-08-27 13:08:33,151 INFO /home/arivu/.local/bin/bench --site practice.localhost install-app aerele_assignment
+2026-08-27 13:08:54,318 INFO /home/arivu/.local/bin/bench --site practice.localhost list-apps
+2026-08-27 13:10:21,909 INFO /home/arivu/.local/bin/bench --site practice.localhost migrate
+2026-08-27 13:11:21,258 INFO /home/arivu/.local/bin/bench --site practice.localhost uninstall-app custom
+2026-08-27 13:11:52,660 INFO /home/arivu/.local/bin/bench list-apps
+2026-08-27 13:13:48,933 INFO /home/arivu/.local/bin/bench --site practice.localhost uninstall-app custom
+2026-08-27 13:14:06,670 INFO /home/arivu/.local/bin/bench start
+2026-08-27 13:14:07,221 INFO /home/arivu/.local/bin/bench serve --port 8000
+2026-08-27 13:14:07,223 INFO /home/arivu/.local/bin/bench schedule
+2026-08-27 13:14:07,225 INFO /home/arivu/.local/bin/bench socketio
+2026-08-27 13:14:07,227 INFO /home/arivu/.local/bin/bench watch
+2026-08-27 13:14:07,232 INFO /home/arivu/.local/bin/bench worker

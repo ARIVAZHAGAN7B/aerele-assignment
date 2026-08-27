@@ -18,10 +18,10 @@
         "idx": 2,
         "version": "0.0.1"
     },
-    "custom": {
+    "aerele_assignment": {
         "is_repo": true,
         "resolution": {
-            "commit_hash": "6a18cf9e9834f7a58c04d4e100c0e34b0bab3bc5",
+            "commit_hash": "b1a284147d9cf5c7137fafeb84a1e00665489a9e",
             "branch": "version-16"
         },
         "required": [],
