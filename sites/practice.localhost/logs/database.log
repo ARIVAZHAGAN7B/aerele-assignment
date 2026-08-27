@@ -1724,3 +1724,47 @@ ALTER TABLE `tabTest Document` ADD COLUMN `description` longtext
 create sequence if not exists test_document_id_seq nocache nocycle
 2026-08-27 13:21:53,439 WARNING database DDL Query made to DB:
 ALTER TABLE `tabTest Document` MODIFY `name` bigint
+2026-08-27 13:41:44,544 WARNING database DDL Query made to DB:
+create table `tabTest Doc` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus tinyint not null default '0',
+			idx int not null default '0',
+			`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+index creation(creation))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2026-08-27 13:42:46,167 WARNING database DDL Query made to DB:
+create sequence if not exists test_doc_id_seq nocache nocycle
+2026-08-27 13:42:46,179 WARNING database DDL Query made to DB:
+ALTER TABLE `tabTest Doc` MODIFY `name` bigint
+2026-08-27 13:42:46,200 WARNING database DDL Query made to DB:
+ALTER TABLE `tabTest Doc` ADD COLUMN `description` varchar(140), ADD COLUMN `status` varchar(140)
+2026-08-27 13:43:17,541 WARNING database DDL Query made to DB:
+create table `tabTest Item` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus tinyint not null default '0',
+			idx int not null default '0',
+			`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+index creation(creation))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2026-08-27 13:44:10,515 WARNING database DDL Query made to DB:
+ALTER TABLE `tabTest Item` ADD COLUMN `test_doc` varchar(140), ADD COLUMN `item_name` varchar(140), ADD COLUMN `quantity` int(11) NOT NULL DEFAULT 0

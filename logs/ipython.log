@@ -67,3 +67,69 @@ print(q.count)
 
 frappe.get_hooks("scheduler_events")
 2026-08-17 15:34:39,696 INFO ipython === session end ===
+2026-08-27 14:17:43,586 INFO ipython === bench console session ===
+2026-08-27 14:17:43,586 INFO ipython import aerele_assignment.api
+2026-08-27 14:17:43,586 INFO ipython aerele_assignment.api.update_test_documents
+2026-08-27 14:17:43,586 INFO ipython import frappe
+
+frappe.is_whitelisted(aerele_assignment.api.update_test_documents)
+2026-08-27 14:17:43,586 INFO ipython import frappe
+
+frappe.is_whitelisted(aerele_assignment.api.update_test_documents)
+2026-08-27 14:17:43,586 INFO ipython aerele_assignment.api.update_test_documents.is_whitelisted
+2026-08-27 14:17:43,586 INFO ipython aerele_assignment.api.update_test_documents.is_whitelisted
+2026-08-27 14:17:43,587 INFO ipython === session end ===
+2026-08-27 14:19:17,620 INFO ipython === bench console session ===
+2026-08-27 14:19:17,621 INFO ipython aerele_assignment.api.update_test_documents.is_whitelisted
+2026-08-27 14:19:17,621 INFO ipython import aerele_assignment.api
+2026-08-27 14:19:17,621 INFO ipython aerele_assignment.api.update_test_documents.is_whitelisted
+2026-08-27 14:19:17,621 INFO ipython === session end ===
+2026-08-27 14:21:00,821 INFO ipython === bench console session ===
+2026-08-27 14:21:00,822 INFO ipython import aerele_assignment.api
+
+aerele_assignment.api.update_test_documents
+2026-08-27 14:21:00,822 INFO ipython aerele_assignment.api.update_test_documents.__dict__
+2026-08-27 14:21:00,822 INFO ipython frappe.is_whitelisted(aerele_assignment.api.update_test_documents)
+2026-08-27 14:21:00,822 INFO ipython === session end ===
+2026-08-27 14:22:32,518 INFO ipython === bench console session ===
+2026-08-27 14:22:32,518 INFO ipython import frappe
+import aerele_assignment.api
+
+frappe.is_whitelisted(aerele_assignment.api.update_test_documents)
+2026-08-27 14:22:32,518 INFO ipython print(frappe.is_whitelisted(aerele_assignment.api.update_test_documents))
+2026-08-27 14:22:32,518 INFO ipython print(frappe.is_whitelisted(aerele_assignment.api.update_test_documents))
+2026-08-27 14:22:32,518 INFO ipython === session end ===
+2026-08-27 14:26:31,014 INFO ipython === bench console session ===
+2026-08-27 14:26:31,014 INFO ipython import frappe
+import aerele_assignment.api
+
+frappe.is_whitelisted(aerele_assignment.api.update_test_documents)
+2026-08-27 14:26:31,014 INFO ipython print(frappe.is_whitelisted(aerele_assignment.api.update_test_documents))
+2026-08-27 14:26:31,015 INFO ipython print(aerele_assignment.api.update_test_documents)
+print(aerele_assignment.api.update_test_documents.whitelisted)
+2026-08-27 14:26:31,015 INFO ipython grep -n -B2 -A5 "update_test_documents" apps/aerele_assignment/aerele_assignment/api.py
+2026-08-27 14:26:31,015 INFO ipython === session end ===
+2026-08-27 14:29:22,235 INFO ipython === bench console session ===
+2026-08-27 14:29:22,235 INFO ipython import frappe
+print(frappe.whitelist)
+2026-08-27 14:29:22,235 INFO ipython import aerele_assignment.api
+print(aerele_assignment.api.__file__)
+2026-08-27 14:29:22,236 INFO ipython import frappe
+import aerele_assignment.api
+
+print(frappe.is_whitelisted(aerele_assignment.api.update_test_documents))
+print(frappe.get_attr("aerele_assignment.api.update_test_documents"))
+2026-08-27 14:29:22,236 INFO ipython import inspect
+print(inspect.getsource(frappe.whitelist))
+2026-08-27 14:29:22,236 INFO ipython print(aerele_assignment.api.update_test_documents in frappe.whitelisted)
+2026-08-27 14:29:22,236 INFO ipython print(len(frappe.whitelisted))
+2026-08-27 14:29:22,236 INFO ipython print([x for x in frappe.whitelisted if getattr(x, "__name__", None) == "update_test_documents"])
+2026-08-27 14:29:22,236 INFO ipython print(aerele_assignment.api.update_test_documents in frappe.whitelisted)
+
+print([
+    x for x in frappe.whitelisted
+    if getattr(x, "__name__", None) == "update_test_documents"
+])
+
+print(frappe.is_whitelisted(aerele_assignment.api.update_test_documents))
+2026-08-27 14:29:22,236 INFO ipython === session end ===
