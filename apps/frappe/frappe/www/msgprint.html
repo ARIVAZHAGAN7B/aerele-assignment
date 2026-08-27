@@ -1,0 +1,60 @@
+<h2>msgprint Practice</h2>
+
+<button onclick="show_message()">
+    Show Message
+</button>
+
+<script>
+function show_message() {
+    fetch("/api/method/frappe.aapi.show_message", {
+        method: "POST",
+        headers: {
+            "X-Frappe-CSRF-Token": "{{ frappe.session.csrf_token }}"
+        }
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log(data);
+
+        let messages = JSON.parse(data._server_messages);
+        let message = JSON.parse(messages[0]);
+
+        show_modal(message);
+    });
+}
+
+function show_modal(data) {
+    let modal = document.createElement("div");
+
+    modal.innerHTML = `
+        <div style="
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        ">
+            <div style="
+                background: white;
+                padding: 25px;
+                width: 400px;
+                border-radius: 8px;
+                box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+            ">
+                <h3>${data.title}</h3>
+
+                <p>${data.message}</p>
+
+                <button onclick="this.closest('.modal').remove()">
+                    Close
+                </button>
+            </div>
+        </div>
+    `;
+
+    modal.className = "modal";
+
+    document.body.appendChild(modal);
+}
+</script>

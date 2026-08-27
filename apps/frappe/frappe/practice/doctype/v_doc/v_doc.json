@@ -1,0 +1,66 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "field:user_id",
+ "creation": "2026-08-20 15:24:50.991769",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "v_doc_section",
+  "user_id",
+  "title",
+  "body"
+ ],
+ "fields": [
+  {
+   "fieldname": "v_doc_section",
+   "fieldtype": "Section Break",
+   "label": "v_doc"
+  },
+  {
+   "fieldname": "user_id",
+   "fieldtype": "Int",
+   "label": "user_id",
+   "unique": 1
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "title"
+  },
+  {
+   "fieldname": "body",
+   "fieldtype": "Small Text",
+   "label": "body"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_virtual": 1,
+ "links": [],
+ "modified": "2026-08-20 15:27:30.300517",
+ "modified_by": "Administrator",
+ "module": "Practice",
+ "name": "v-doc",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

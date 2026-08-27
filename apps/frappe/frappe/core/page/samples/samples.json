@@ -1,0 +1,20 @@
+{
+ "content": null,
+ "creation": "2026-08-06 13:00:24.060776",
+ "docstatus": 0,
+ "doctype": "Page",
+ "icon": "siuu",
+ "idx": 0,
+ "modified": "2026-08-06 13:00:24.060776",
+ "modified_by": "Administrator",
+ "module": "Core",
+ "name": "samples",
+ "owner": "Administrator",
+ "page_name": "samples",
+ "roles": [],
+ "script": null,
+ "standard": "Yes",
+ "style": null,
+ "system_page": 0,
+ "title": "sample"
+}
