@@ -133,3 +133,28 @@ print([
 
 print(frappe.is_whitelisted(aerele_assignment.api.update_test_documents))
 2026-08-27 14:29:22,236 INFO ipython === session end ===
+2026-08-27 14:48:19,125 INFO ipython === bench console session ===
+2026-08-27 14:48:19,125 INFO ipython frappe.get_all(
+    "Scheduled Job Type",
+    filters={"method": "aerele_assignment.tasks.daily_maintenance"},
+    fields=["name", "method", "frequency", "stopped"]
+)
+2026-08-27 14:48:19,125 INFO ipython from aerele_assignment.tasks import daily_maintenance
+daily_maintenance()
+2026-08-27 14:48:19,125 INFO ipython === session end ===
+2026-08-27 14:50:14,888 INFO ipython === bench console session ===
+2026-08-27 14:50:14,888 INFO ipython frappe.get_all(
+   "Scheduled Job Type",
+    filters={"method": "aerele_assignment.tasks.daily_maintenance"},
+    fields=["name", "method", "frequency", "stopped"]
+)
+2026-08-27 14:50:14,889 INFO ipython from aerele_assignment.tasks import daily_maintenance
+daily_maintenance()
+2026-08-27 14:50:14,889 INFO ipython frappe.get_all(
+    "Scheduled Job Type",
+    filters={"method": "aerele_assignment.tasks.daily_maintenance"},
+    fields=["name", "method", "frequency", "stopped"]
+)
+2026-08-27 14:50:14,889 INFO ipython from aerele_assignment.tasks import daily_maintenance
+daily_maintenance()
+2026-08-27 14:50:14,889 INFO ipython === session end ===
