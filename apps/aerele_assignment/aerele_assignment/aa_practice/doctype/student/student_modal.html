@@ -1,0 +1,11 @@
+<div>
+    <h3>{{ student_name }}</h3>
+
+    <p>Department: {{ department }}</p>
+    <p>Phone: {{ phone }}</p>
+
+    {% if department == "CSE" %}
+        <p>This student belongs to CSE.</p>
+    {% endif %}
+    <p>{{first_name, last_name}}</p>
+</div>

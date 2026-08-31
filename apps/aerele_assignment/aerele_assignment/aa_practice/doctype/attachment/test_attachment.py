@@ -1,4 +1,4 @@
-# Copyright (c) 2026, Frappe Technologies and Contributors
+# Copyright (c) 2026, aerele and Contributors
 # See license.txt
 
 # import frappe
@@ -13,9 +13,9 @@ IGNORE_TEST_RECORD_DEPENDENCIES = []  # eg. ["User"]
 
 
 
-class IntegrationTestCourse(IntegrationTestCase):
+class IntegrationTestattachment(IntegrationTestCase):
 	"""
-	Integration tests for Course.
+	Integration tests for attachment.
 	Use this class for testing interactions between multiple components.
 	"""
 

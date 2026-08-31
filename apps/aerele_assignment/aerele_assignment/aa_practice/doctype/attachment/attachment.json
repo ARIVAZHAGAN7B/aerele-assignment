@@ -2,48 +2,34 @@
  "actions": [],
  "allow_bulk_edit": 1,
  "allow_rename": 1,
- "autoname": "field:course_name",
- "creation": "2026-08-20 10:59:03.162588",
+ "autoname": "sample-.###",
+ "creation": "2026-08-30 17:50:59.861889",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "course_section",
-  "course_id",
-  "course_name",
-  "student"
+  "form_section",
+  "image"
  ],
  "fields": [
   {
-   "fieldname": "course_section",
+   "fieldname": "form_section",
    "fieldtype": "Section Break",
-   "label": "Course"
+   "label": "form"
   },
   {
-   "fieldname": "course_id",
-   "fieldtype": "Data",
-   "label": "Course Id"
-  },
-  {
-   "fieldname": "course_name",
-   "fieldtype": "Data",
-   "label": "Course Name",
-   "unique": 1
-  },
-  {
-   "fieldname": "student",
-   "fieldtype": "Link",
-   "label": "Student",
-   "options": "Student"
+   "fieldname": "image",
+   "fieldtype": "Attach",
+   "label": "image"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-08-20 11:00:25.942930",
+ "modified": "2026-08-30 17:52:12.595127",
  "modified_by": "Administrator",
- "module": "Practice",
- "name": "Course",
- "naming_rule": "By fieldname",
+ "module": "aa-practice",
+ "name": "attachment",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {

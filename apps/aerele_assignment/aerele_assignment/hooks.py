@@ -267,3 +267,5 @@ scheduler_events = {
         "aerele_assignment.tasks.daily_maintenance"
     ]
 }
+
+

@@ -573,3 +573,142 @@
 2026-08-27 15:47:41,105 DEBUG sudo /home/arivu/.local/share/uv/tools/frappe-bench/bin/python -m pip install ansible
 2026-08-27 15:47:41,157 WARNING sudo /home/arivu/.local/share/uv/tools/frappe-bench/bin/python -m pip install ansible executed with exit code 1
 2026-08-27 15:47:41,158 WARNING /home/arivu/.local/bin/bench setup production arivu executed with exit code 1
+2026-08-27 16:21:10,957 INFO /home/arivu/.local/bin/bench --site practice.localhost clear-cache
+2026-08-27 16:21:12,689 INFO /home/arivu/.local/bin/bench start
+2026-08-27 16:21:13,174 INFO /home/arivu/.local/bin/bench socketio
+2026-08-27 16:21:13,177 INFO /home/arivu/.local/bin/bench serve --port 8000
+2026-08-27 16:21:13,178 INFO /home/arivu/.local/bin/bench schedule
+2026-08-27 16:21:13,180 INFO /home/arivu/.local/bin/bench watch
+2026-08-27 16:21:13,181 INFO /home/arivu/.local/bin/bench worker
+2026-08-27 17:39:33,963 INFO /home/arivu/.local/bin/bench --site practice.localhost mariadb
+2026-08-28 06:46:05,483 INFO /home/arivu/.local/bin/bench start
+2026-08-28 06:46:05,778 INFO /home/arivu/.local/bin/bench serve --port 8000
+2026-08-28 06:46:05,783 INFO /home/arivu/.local/bin/bench schedule
+2026-08-28 06:46:05,787 INFO /home/arivu/.local/bin/bench socketio
+2026-08-28 06:46:05,788 INFO /home/arivu/.local/bin/bench watch
+2026-08-28 06:46:05,791 INFO /home/arivu/.local/bin/bench worker
+2026-08-28 06:46:23,870 INFO /home/arivu/.local/bin/bench start
+2026-08-28 06:46:24,387 INFO /home/arivu/.local/bin/bench serve --port 8000
+2026-08-28 06:46:24,390 INFO /home/arivu/.local/bin/bench socketio
+2026-08-28 06:46:24,391 INFO /home/arivu/.local/bin/bench watch
+2026-08-28 06:46:24,399 INFO /home/arivu/.local/bin/bench schedule
+2026-08-28 06:46:24,403 INFO /home/arivu/.local/bin/bench worker
+2026-08-28 06:46:54,798 INFO /home/arivu/.local/bin/bench start
+2026-08-28 06:46:55,109 INFO /home/arivu/.local/bin/bench socketio
+2026-08-28 06:46:55,111 INFO /home/arivu/.local/bin/bench schedule
+2026-08-28 06:46:55,118 INFO /home/arivu/.local/bin/bench worker
+2026-08-28 06:46:55,121 INFO /home/arivu/.local/bin/bench watch
+2026-08-28 06:46:55,122 INFO /home/arivu/.local/bin/bench serve --port 8000
+2026-08-28 10:37:14,482 INFO /home/arivu/.local/bin/bench start
+2026-08-28 10:37:15,434 INFO /home/arivu/.local/bin/bench watch
+2026-08-28 10:37:15,441 INFO /home/arivu/.local/bin/bench socketio
+2026-08-28 10:37:15,441 INFO /home/arivu/.local/bin/bench serve --port 8000
+2026-08-28 10:37:15,445 INFO /home/arivu/.local/bin/bench worker
+2026-08-28 10:37:15,451 INFO /home/arivu/.local/bin/bench schedule
+2026-08-28 10:37:43,960 INFO /home/arivu/.local/bin/bench start
+2026-08-28 10:37:45,326 INFO /home/arivu/.local/bin/bench socketio
+2026-08-28 10:37:45,365 INFO /home/arivu/.local/bin/bench worker
+2026-08-28 10:37:45,379 INFO /home/arivu/.local/bin/bench schedule
+2026-08-28 10:37:45,380 INFO /home/arivu/.local/bin/bench watch
+2026-08-28 10:37:45,385 INFO /home/arivu/.local/bin/bench serve --port 8000
+2026-08-28 12:00:01,890 INFO /home/arivu/.local/bin/bench --verbose --site all backup
+2026-08-28 12:23:05,814 INFO /home/arivu/.local/bin/bench stop
+2026-08-28 12:23:38,626 INFO /home/arivu/.local/bin/bench start
+2026-08-28 12:23:49,453 INFO /home/arivu/.local/bin/bench start
+2026-08-28 12:24:16,958 INFO /home/arivu/.local/bin/bench start
+2026-08-28 12:24:50,925 INFO /home/arivu/.local/bin/bench start
+2026-08-28 12:26:09,883 INFO /home/arivu/.local/bin/bench start
+2026-08-28 12:26:10,384 INFO /home/arivu/.local/bin/bench serve --port 8000
+2026-08-28 12:26:10,384 INFO /home/arivu/.local/bin/bench socketio
+2026-08-28 12:26:10,387 INFO /home/arivu/.local/bin/bench watch
+2026-08-28 12:26:10,393 INFO /home/arivu/.local/bin/bench schedule
+2026-08-28 12:26:10,399 INFO /home/arivu/.local/bin/bench worker
+2026-08-28 12:27:03,785 INFO /home/arivu/.local/bin/bench start
+2026-08-28 12:27:04,320 INFO /home/arivu/.local/bin/bench schedule
+2026-08-28 12:27:04,322 INFO /home/arivu/.local/bin/bench serve --port 8000
+2026-08-28 12:27:04,323 INFO /home/arivu/.local/bin/bench socketio
+2026-08-28 12:27:04,324 INFO /home/arivu/.local/bin/bench worker
+2026-08-28 12:27:04,326 INFO /home/arivu/.local/bin/bench watch
+2026-08-28 13:11:20,933 INFO /home/arivu/.local/bin/bench start
+2026-08-28 13:11:21,496 INFO /home/arivu/.local/bin/bench watch
+2026-08-28 13:11:21,499 INFO /home/arivu/.local/bin/bench socketio
+2026-08-28 13:11:21,500 INFO /home/arivu/.local/bin/bench serve --port 8000
+2026-08-28 13:11:21,501 INFO /home/arivu/.local/bin/bench schedule
+2026-08-28 13:11:21,506 INFO /home/arivu/.local/bin/bench worker
+2026-08-28 13:11:48,057 INFO /home/arivu/.local/bin/bench start
+2026-08-28 13:11:48,527 INFO /home/arivu/.local/bin/bench serve --port 8000
+2026-08-28 13:11:48,528 INFO /home/arivu/.local/bin/bench socketio
+2026-08-28 13:11:48,530 INFO /home/arivu/.local/bin/bench schedule
+2026-08-28 13:11:48,532 INFO /home/arivu/.local/bin/bench watch
+2026-08-28 13:11:48,540 INFO /home/arivu/.local/bin/bench worker
+2026-08-28 13:27:54,324 INFO /home/arivu/.local/bin/bench pip show PyPika
+2026-08-28 15:52:49,354 INFO /home/arivu/.local/bin/bench restart
+2026-08-28 15:52:53,716 INFO /home/arivu/.local/bin/bench restart
+2026-08-28 16:13:00,560 INFO /home/arivu/.local/bin/bench --site practice.localhost migrate
+2026-08-28 16:16:00,385 INFO /home/arivu/.local/bin/bench build --app aerele_assignment
+2026-08-28 16:49:49,477 INFO /home/arivu/.local/bin/bench worker
+2026-08-28 16:54:37,904 INFO /home/arivu/.local/bin/bench doctor
+2026-08-29 12:00:01,918 INFO /home/arivu/.local/bin/bench --verbose --site all backup
+2026-08-30 12:00:02,388 INFO /home/arivu/.local/bin/bench --verbose --site all backup
+2026-08-30 13:23:47,571 INFO /home/arivu/.local/bin/bench start
+2026-08-30 13:23:47,903 INFO /home/arivu/.local/bin/bench schedule
+2026-08-30 13:23:47,904 INFO /home/arivu/.local/bin/bench worker
+2026-08-30 13:23:47,904 INFO /home/arivu/.local/bin/bench socketio
+2026-08-30 13:23:47,906 INFO /home/arivu/.local/bin/bench serve --port 8000
+2026-08-30 13:23:47,908 INFO /home/arivu/.local/bin/bench watch
+2026-08-30 13:23:50,670 INFO /home/arivu/.local/bin/bench start
+2026-08-30 13:23:50,977 INFO /home/arivu/.local/bin/bench serve --port 8000
+2026-08-30 13:23:50,977 INFO /home/arivu/.local/bin/bench socketio
+2026-08-30 13:23:50,978 INFO /home/arivu/.local/bin/bench worker
+2026-08-30 13:23:50,982 INFO /home/arivu/.local/bin/bench watch
+2026-08-30 13:23:50,984 INFO /home/arivu/.local/bin/bench schedule
+2026-08-30 13:24:27,743 INFO /home/arivu/.local/bin/bench start
+2026-08-30 13:24:28,053 INFO /home/arivu/.local/bin/bench serve --port 8000
+2026-08-30 13:24:28,054 INFO /home/arivu/.local/bin/bench worker
+2026-08-30 13:24:28,054 INFO /home/arivu/.local/bin/bench schedule
+2026-08-30 13:24:28,054 INFO /home/arivu/.local/bin/bench watch
+2026-08-30 13:24:28,056 INFO /home/arivu/.local/bin/bench socketio
+2026-08-30 18:00:01,738 INFO /home/arivu/.local/bin/bench --verbose --site all backup
+2026-08-30 18:03:49,241 INFO /home/arivu/.local/bin/bench set-config -g server_script_enabled 1
+2026-08-30 18:54:37,195 INFO /home/arivu/.local/bin/bench doctor
+2026-08-30 18:55:19,901 INFO /home/arivu/.local/bin/bench --site practice.localhost ready-for-migration
+2026-08-30 18:55:57,458 INFO /home/arivu/.local/bin/bench --site practice.localhost show-config
+2026-08-30 23:16:22,578 INFO /home/arivu/.local/bin/bench build
+2026-08-30 23:16:29,489 INFO /home/arivu/.local/bin/bench watch
+2026-08-31 06:50:54,550 INFO /home/arivu/.local/bin/bench status
+2026-08-31 06:51:01,252 INFO /home/arivu/.local/bin/bench status
+2026-08-31 06:51:05,020 INFO /home/arivu/.local/bin/bench start
+2026-08-31 06:51:05,355 INFO /home/arivu/.local/bin/bench watch
+2026-08-31 06:51:05,355 INFO /home/arivu/.local/bin/bench serve --port 8000
+2026-08-31 06:51:05,359 INFO /home/arivu/.local/bin/bench worker
+2026-08-31 06:51:05,359 INFO /home/arivu/.local/bin/bench socketio
+2026-08-31 06:51:05,360 INFO /home/arivu/.local/bin/bench schedule
+2026-08-31 10:31:40,586 INFO /home/arivu/.local/bin/bench start
+2026-08-31 10:31:40,920 INFO /home/arivu/.local/bin/bench serve --port 8000
+2026-08-31 10:31:40,928 INFO /home/arivu/.local/bin/bench watch
+2026-08-31 10:31:40,935 INFO /home/arivu/.local/bin/bench socketio
+2026-08-31 10:31:40,935 INFO /home/arivu/.local/bin/bench worker
+2026-08-31 10:31:40,945 INFO /home/arivu/.local/bin/bench schedule
+2026-08-31 11:10:58,728 INFO /home/arivu/.local/bin/bench setup add-domain custom.mycompany.com
+2026-08-31 11:11:05,185 WARNING /home/arivu/.local/bin/bench setup add-domain custom.mycompany.com executed with exit code 1
+2026-08-31 11:40:08,891 INFO /home/arivu/.local/bin/bench hello-app
+2026-08-31 12:00:02,448 INFO /home/arivu/.local/bin/bench --verbose --site all backup
+2026-08-31 12:24:25,838 INFO /home/arivu/.local/bin/bench --site practice.localhost data-import --doctype Test Doc --file sites/practice.localhost/private/files/Test_Doc_filed_20_rows.csv
+2026-08-31 12:24:48,737 INFO /home/arivu/.local/bin/bench --site practice.localhost data-import --doctype Test Doc --file sites/practice.localhost/private/files/Test Doc_filed_20_rows.csv
+2026-08-31 12:25:04,519 INFO /home/arivu/.local/bin/bench --site practice.localhost data-import --doctype Test Doc --file sites/practice.localhost/private/files/TestDoc_filed_20_rows.csv
+2026-08-31 12:25:23,788 INFO /home/arivu/.local/bin/bench --site practice.localhost data-import --doctype Test Doc --file sites/practice.localhost/private/files/Test_Doc_filed_20_rows.csv
+2026-08-31 12:25:48,336 INFO /home/arivu/.local/bin/bench --site practice.localhost migrate
+2026-08-31 12:26:00,121 INFO /home/arivu/.local/bin/bench --site practice.localhost data-import --doctype Test Doc --file sites/practice.localhost/private/files/Test_Doc_filed_20_rows.csv
+2026-08-31 12:26:38,402 INFO /home/arivu/.local/bin/bench --site practice.localhost data-import --doctype Test Doc --file sites/practice.localhost/private/files/Test_Doc_filed_20_rows.csv --type Update
+2026-08-31 12:27:57,690 INFO /home/arivu/.local/bin/bench --site practice.localhost data-import --help
+2026-08-31 12:28:32,436 INFO /home/arivu/.local/bin/bench --site practice.localhost data-import --doctype Test Doc --file practice.localhost/private/files/Test_Doc_filled_20_rows.csv --type insert
+2026-08-31 12:29:01,054 INFO /home/arivu/.local/bin/bench --site practice.localhost data-import --doctype Test Doc --file practice.localhost/private/files/Test_Doc_filled_20_rows.csv --type insert
+2026-08-31 16:52:08,195 INFO /home/arivu/.local/bin/bench --site practice.localhost data-import --doctype Test Doc --file practice.localhost/private/files/Test_Doc_filled_20_rows.csv --type insert
+2026-08-31 16:55:49,613 INFO /home/arivu/.local/bin/bench --site practice.localhost data-import --doctype Student --file practice.localhost/private/files/student_100_rows.csv --type insert
+2026-08-31 16:56:40,505 INFO /home/arivu/.local/bin/bench --site practice.localhost data-import --doctype Test Doc --file practice.localhost/private/files/Test_Doc_filled_20_rows.csv --type insert
+2026-08-31 16:56:48,639 INFO /home/arivu/.local/bin/bench --site practice.localhost data-import --doctype Test Doc --file practice.localhost/private/files/Test_Doc_filled_20_rows.csv --type insert
+2026-08-31 16:56:55,089 INFO /home/arivu/.local/bin/bench --site practice.localhost data-import --doctype Test Doc --file practice.localhost/private/files/Test_Doc_filled_20_rows.csv --type update
+2026-08-31 16:57:17,563 INFO /home/arivu/.local/bin/bench --site practice.localhost data-import --doctype Student --file practice.localhost/private/files/student_100_rows.csv --type insert
+2026-08-31 16:57:33,604 INFO /home/arivu/.local/bin/bench --site practice.localhost data-import --doctype Student --file practice.localhost/private/files/student_100_rows.csv --type update
+2026-08-31 16:58:50,726 INFO /home/arivu/.local/bin/bench --site practice.localhost data-import --doctype Student --file practice.localhost/private/files/student_100_rows.csv --type insret
+2026-08-31 16:58:54,221 INFO /home/arivu/.local/bin/bench --site practice.localhost data-import --doctype Student --file practice.localhost/private/files/student_100_rows.csv --type insert
