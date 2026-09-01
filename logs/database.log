@@ -1934,3 +1934,5 @@ index creation(creation))
 			COLLATE=utf8mb4_unicode_ci
 2026-08-31 21:34:42,366 WARNING database DDL Query made to DB:
 ALTER TABLE `tabBook Rental` ADD COLUMN `user` varchar(140), ADD COLUMN `membership` varchar(140), ADD COLUMN `library` varchar(140), ADD COLUMN `book` varchar(140), ADD COLUMN `rental_date` datetime(6), ADD COLUMN `due_date` datetime(6), ADD COLUMN `return_date` datetime(6), ADD COLUMN `status` varchar(140), ADD COLUMN `fine_amount` decimal(21,9) NOT NULL DEFAULT 0.0
+2026-09-01 16:11:58,037 WARNING database DDL Query made to DB:
+ALTER TABLE `tabStudent` ADD COLUMN `custom_sample` varchar(140) DEFAULT '10'

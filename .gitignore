@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.Python
+*.egg-info/
+.eggs/
+
+# Virtual environment
+env/
+.venv/
+venv/
+
+# Bench
+logs/
+config/
+sites/assets/
+sites/*/private/backups/
+sites/*/public/files/
+
+# Site configuration / sensitive data
+sites/*/site_config.json
+sites/common_site_config.json
+
+# Node
+node_modules/
+.npm/
+.yarn/
+
+# Build/generated assets
+*.map
+public/dist/
+dist/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Frappe generated files
+*.log
+
+#archive
+archived/*
