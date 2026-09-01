@@ -21,6 +21,7 @@ sites/*/public/files/
 # Site configuration / sensitive data
 sites/*/site_config.json
 sites/common_site_config.json
+sites/practice.localhost/site_config.json
 
 # Node
 node_modules/
