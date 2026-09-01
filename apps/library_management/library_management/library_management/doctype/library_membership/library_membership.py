@@ -1,7 +1,7 @@
 import frappe
 from frappe import _
 from frappe.model.document import Document
-from frappe.utils import now_datetime, get_datetime
+from frappe.utils import now_datetime, get_datetime, add_to_date, add_days
 
 
 class LibraryMembership(Document):
@@ -70,3 +70,9 @@ class LibraryMembership(Document):
             return
 
         self.status = "Active"
+    
+@frappe.whitelist()
+def extend_validation(name, days:int):
+    doc = frappe.get_doc("Library Membership", name)
+    doc.end_date = add_days(doc.end_date, days)
+    doc.save()

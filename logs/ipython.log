@@ -190,3 +190,113 @@ print(inspect.getsource(aerele_assignment.api.get_recent_todos))
 2026-08-27 15:01:24,470 INFO ipython import aerele_assignment.api
 2026-08-27 15:01:24,470 INFO ipython aerele_assignment.api.update_test_documents()
 2026-08-27 15:01:24,470 INFO ipython === session end ===
+2026-09-01 11:01:08,779 INFO ipython === bench console session ===
+2026-09-01 11:01:08,788 INFO ipython frappe.get_all(
+    "Deleted Document",
+    filters={
+        "deleted_doctype": "Book Rental"
+    },
+    fields=["name", "deleted_name"]
+)
+2026-09-01 11:01:08,788 INFO ipython frappe.get_all(
+    "Deleted Document",
+    filters={
+        "deleted_doctype": "Book Rental"
+    }
+    
+)
+2026-09-01 11:01:08,788 INFO ipython frappe.get_all(
+    "Deleted Document",
+    filters={
+        "deleted_doctype": "Book Rental"
+    ,
+    fields=["*"]
+}
+    
+)
+2026-09-01 11:01:08,788 INFO ipython frappe.get_all(
+    "Deleted Document",
+    filters={
+        "deleted_doctype": "Book Rental"
+    ,
+    fields=[*]
+}    
+)
+2026-09-01 11:01:08,788 INFO ipython frappe.get_all(
+    "Deleted Document",
+    filters={
+        "deleted_doctype": "Book Rental"
+    ,
+    fields=["user", "membership", "library", "book", "rental_date", "due_date", "status", "fine_amount"]
+}    
+)
+2026-09-01 11:01:08,789 INFO ipython frappe.get_all(
+    "Deleted Document",
+    filters={
+        "deleted_doctype": "Book Rental"
+   } ,
+    fields=["user", "membership", "library", "book", "rental_date", "due_date", "status", "fine_amount"]
+       
+)
+2026-09-01 11:01:08,789 INFO ipython frappe.get_all(
+    "Deleted Document",
+    filters={
+        "deleted_doctype": "Book Rental"
+   } ,
+    fields=["name", "membership", "library", "book", "rental_date", "due_date", "status", "fine_amount"]
+       
+)
+2026-09-01 11:01:08,789 INFO ipython frappe.get_all(
+    "Deleted Document",
+    filters={
+        "deleted_doctype": "Book Rental"
+   } ,
+    fields=["name", "membership", "library", "book", "rental_date", "due_date", "status", "fine_amount"]
+       
+)
+2026-09-01 11:01:08,789 INFO ipython 
+)
+2026-09-01 11:01:08,789 INFO ipython d = frappe.get_doc("Deleted Document", "ce7u5e5aj9")
+print(d.as_dict())
+2026-09-01 11:01:08,789 INFO ipython import json
+
+d = frappe.get_doc("Deleted Document", "ce7u5e5aj9")
+
+data = json.loads(d.data)
+
+doc = frappe.get_doc(data)
+doc.insert(ignore_permissions=True)
+
+frappe.db.commit()
+2026-09-01 11:01:08,789 INFO ipython import json
+
+deleted_docs = frappe.get_all(
+    "Deleted Document",
+    filters={
+        "deleted_doctype": "Book Rental",
+        "restored": 0
+    },
+    fields=["name", "deleted_name", "data"]
+)
+
+for d in deleted_docs:
+    if frappe.db.exists("Book Rental", d.deleted_name):
+        print(f"Already exists: {d.deleted_name}")
+        continue
+
+    data = json.loads(d.data)
+
+    doc = frappe.get_doc(data)
+    doc.flags.ignore_validate = True
+    doc.flags.ignore_permissions = True
+    doc.insert()
+
+    d_doc = frappe.get_doc("Deleted Document", d.name)
+    d_doc.restored = 1
+    d_doc.new_name = doc.name
+    d_doc.save(ignore_permissions=True)
+
+    print(f"Restored: {doc.name}")
+
+frappe.db.commit()
+2026-09-01 11:01:08,789 INFO ipython === session end ===

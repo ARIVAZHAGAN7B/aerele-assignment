@@ -398,3 +398,9 @@ Backup Summary for practice.localhost at 2026-08-31 12:00:04.424142
 Config  : /home/arivu/frappe-v16-bench/sites/practice.localhost/private/backups/20260831_120003-practice_localhost-site_config_backup.json 234.0B
 Database: /home/arivu/frappe-v16-bench/sites/practice.localhost/private/backups/20260831_120003-practice_localhost-database.sql.gz 652.8KiB
 Backup for Site practice.localhost has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_d652df975b7b000b --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _d652df975b7b000b | /usr/bin/gzip >> ./practice.localhost/private/backups/20260901_120002-practice_localhost-database.sql.gz
+
+Backup Summary for practice.localhost at 2026-09-01 12:00:02.562343
+Config  : /home/arivu/frappe-v16-bench/sites/practice.localhost/private/backups/20260901_120002-practice_localhost-site_config_backup.json 347.0B
+Database: /home/arivu/frappe-v16-bench/sites/practice.localhost/private/backups/20260901_120002-practice_localhost-database.sql.gz 769.9KiB
+Backup for Site practice.localhost has been successfully completed

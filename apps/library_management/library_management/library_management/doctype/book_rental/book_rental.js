@@ -1,4 +1,18 @@
 frappe.ui.form.on("Book Rental", {
+
+
+    onload(frm) {
+        frappe.call({
+            method: "library_management.library_management.doctype.book_rental.book_rental.currentUser",
+        }).then((r) => {
+            const data = r.message;
+
+            frm.set_value("user", data.user);
+            frm.set_value("membership", data.membership);
+            frm.set_value("library", data.library);
+        });
+    },
+
     refresh(frm) {
 
         if (

@@ -1,7 +1,6 @@
 import frappe
 from frappe import _
 from frappe.model.document import Document
-from frappe.utils import flt
 
 
 class Book(Document):
@@ -35,14 +34,13 @@ class Book(Document):
 
 	def validate_total_copies(self):
 
-		if flt(self.total_copies) < 0:
+		if self.total_copies < 0:
 			frappe.throw(
 				_("Total copies cannot be negative.")
 			)
 
 	def initialize_or_update_copies(self):
 
-		# New Book
 		if self.is_new():
 			self.available_copies = self.total_copies
 			return
@@ -62,11 +60,7 @@ class Book(Document):
 		if old_total is None:
 			return
 
-		old_total = flt(old_total)
-		old_available = flt(old_available)
-		new_total = flt(self.total_copies)
-
-		difference = new_total - old_total
+		difference = self.total_copies - old_total
 
 		new_available = old_available + difference
 
@@ -78,7 +72,7 @@ class Book(Document):
 				)
 			)
 
-		if new_available > new_total:
+		if new_available > self.total_copies:
 			frappe.throw(
 				_("Available copies cannot exceed total copies.")
 			)
@@ -91,3 +85,129 @@ class Book(Document):
 			self.status = "Available"
 		else:
 			self.status = "Unavailable"
+
+	@frappe.whitelist()
+	def rent_book(self):
+
+		user = frappe.session.user
+
+		if user == "Guest":
+			frappe.throw(
+				_("You must be logged in to rent a book.")
+			)
+
+		# Lock the Book row
+		book = frappe.db.get_value(
+			"Book",
+			self.name,
+			[
+				"name",
+				"library",
+				"available_copies",
+				"status"
+			],
+			for_update=True,
+			as_dict=True
+		)
+
+		if not book:
+			frappe.throw(_("Book does not exist."))
+
+		# Check availability
+		if book.available_copies < 1:
+			frappe.throw(
+				_("No available copies of {0}.").format(
+					self.name
+				)
+			)
+
+		# Find active membership of logged-in user
+		membership = frappe.db.get_value(
+			"Library Membership",
+			{
+				"user": user,
+				"library": book.library,
+				"status": "Active"
+			},
+			[
+				"name",
+				"start_date",
+				"end_date"
+			],
+			as_dict=True
+		)
+
+		if not membership:
+			frappe.throw(
+				_(
+					"You do not have an active membership "
+					"for {0}."
+				).format(book.library)
+			)
+
+		# Check membership dates
+		today = frappe.utils.getdate()
+
+		if (
+			membership.start_date
+			and today < frappe.utils.getdate(
+				membership.start_date
+			)
+		):
+			frappe.throw(
+				_("Your membership has not started yet.")
+			)
+
+		if (
+			membership.end_date
+			and today > frappe.utils.getdate(
+				membership.end_date
+			)
+		):
+			frappe.throw(
+				_("Your membership has expired.")
+			)
+
+		# Check maximum books
+		settings = frappe.get_cached_doc(
+			"Library Settings"
+		)
+
+		if settings.maximum_books:
+
+			active_rentals = frappe.db.count(
+				"Book Rental",
+				{
+					"user": user,
+					"status": ["in", ["Rented", "Overdue"]]
+				}
+			)
+
+			if active_rentals >= settings.maximum_books:
+				frappe.throw(
+					_(
+						"You have reached the maximum limit "
+						"of {0} rented books."
+					).format(
+						settings.maximum_books
+					)
+				)
+
+		# Create rental
+		rental = frappe.get_doc({
+			"doctype": "Book Rental",
+			"user": user,
+			"membership": membership.name,
+			"library": book.library,
+			"book": book.name,
+			"status": "Rented"
+		})
+
+		rental.insert(
+			ignore_permissions=True
+		)
+
+		return {
+			"rental": rental.name,
+			"book": book.name
+		}

@@ -315,3 +315,19 @@ def get_permission_query_conditions(user):
 		user = frappe.session.user
 
 	return f"`tabBook Rental`.`user` = {frappe.db.escape(user)}"
+
+@frappe.whitelist()
+def currentUser():
+    user = frappe.session.user
+
+    membership, library = frappe.db.get_value(
+        "Library Membership",
+        {"user": user},
+        ["name", "library"]
+    ) or (None, None)
+
+    return {
+        "user": user,
+        "membership": membership,
+        "library": library
+    }
