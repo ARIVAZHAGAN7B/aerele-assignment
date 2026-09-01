@@ -51,3 +51,11 @@ Traceback (most recent call last):
   File "/usr/lib/python3.14/zoneinfo/_common.py", line 29, in load_tzdata
     raise ZoneInfoNotFoundError(f"No time zone found with key {key}")
 zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key Asia/Calcutta'
+2026-09-01 15:30:00,125 ERROR scheduler Skipped queueing frappe.email.doctype.notification.notification.trigger_offset_alerts because it was found in queue for practice.localhost
+2026-09-01 15:30:00,136 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for practice.localhost
+2026-09-01 15:30:00,138 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for practice.localhost
+2026-09-01 15:30:00,141 ERROR scheduler Skipped queueing frappe.automation.doctype.reminder.reminder.send_reminders because it was found in queue for practice.localhost
+2026-09-01 15:30:00,146 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_calendar.google_calendar.sync because it was found in queue for practice.localhost
+2026-09-01 15:30:00,150 ERROR scheduler Skipped queueing frappe.utils.global_search.sync_global_search because it was found in queue for practice.localhost
+2026-09-01 15:30:00,151 ERROR scheduler Skipped queueing scheduler_practice.api.test_worker because it was found in queue for practice.localhost
+2026-09-01 15:30:00,153 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.pull because it was found in queue for practice.localhost

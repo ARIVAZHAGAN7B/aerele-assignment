@@ -75,4 +75,5 @@ class LibraryMembership(Document):
 def extend_validation(name, days:int):
     doc = frappe.get_doc("Library Membership", name)
     doc.end_date = add_days(doc.end_date, days)
+    print(frappe.custom_func())
     doc.save()

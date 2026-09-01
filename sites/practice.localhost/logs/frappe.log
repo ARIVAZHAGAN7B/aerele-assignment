@@ -250,3 +250,15 @@ Form Dict: {'name': 'Administrator', 'cmd': 'library_management.library_manageme
 2026-09-01 14:05:53,788 ERROR frappe New Exception collected in error log
 Site: practice.localhost
 Form Dict: {'name': 'Administrator', 'days': '20', 'cmd': 'library_management.library_management.doctype.library_membership.library_membership.extend_validation'}
+2026-09-01 14:35:21,415 ERROR frappe New Exception collected in error log
+Site: practice.localhost
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Workspace","name":"new-workspace-xtjuzxcaqt","__islocal":1,"__unsaved":1,"owner":"Administrator","type":"Workspace","link_type":"DocType","indicator_color":"green","hide_custom":0,"public":0,"is_hidden":0,"content":"[]","number_cards":[],"charts":[],"shortcuts":[],"links":[],"quick_lists":[],"custom_blocks":[],"roles":[],"label":"Sample","title":"Sample"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2026-09-01 14:35:28,992 ERROR frappe New Exception collected in error log
+Site: practice.localhost
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Workspace","name":"new-workspace-xtjuzxcaqt","__islocal":1,"__unsaved":1,"owner":"Administrator","type":"Workspace","link_type":"DocType","indicator_color":"green","hide_custom":0,"public":0,"is_hidden":0,"content":"[]","number_cards":[],"charts":[],"shortcuts":[],"links":[],"quick_lists":[],"custom_blocks":[],"roles":[],"label":"Samplejew","title":"Sample"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2026-09-01 14:35:37,556 ERROR frappe New Exception collected in error log
+Site: practice.localhost
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Workspace","name":"new-workspace-xtjuzxcaqt","__islocal":1,"__unsaved":1,"owner":"Administrator","type":"Workspace","link_type":"DocType","indicator_color":"green","hide_custom":0,"public":0,"is_hidden":0,"content":"[]","number_cards":[],"charts":[],"shortcuts":[],"links":[],"quick_lists":[],"custom_blocks":[],"roles":[],"label":"kdsahflhadsjkf","title":"Sample"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2026-09-01 14:35:42,277 ERROR frappe New Exception collected in error log
+Site: practice.localhost
+Form Dict: {'workspace': 'new-workspace-xtjuzxcaqt', 'cmd': 'frappe.desk.doctype.desktop_icon.desktop_icon.add_workspace_to_desktop'}
