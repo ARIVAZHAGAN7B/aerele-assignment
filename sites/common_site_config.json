@@ -1,6 +1,7 @@
 {
  "background_workers": 1,
  "default_site": "practice.localhost",
+ "developer-mode": 1,
  "file_watcher_port": 6787,
  "frappe_user": "arivu",
  "gunicorn_workers": 33,

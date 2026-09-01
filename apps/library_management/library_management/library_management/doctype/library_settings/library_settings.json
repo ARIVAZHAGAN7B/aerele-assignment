@@ -1,0 +1,64 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "autoincrement",
+ "creation": "2026-08-31 21:35:43.806394",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "form_section",
+  "rental_days",
+  "fine_per_day",
+  "maximum_books"
+ ],
+ "fields": [
+  {
+   "fieldname": "form_section",
+   "fieldtype": "Section Break",
+   "label": "form"
+  },
+  {
+   "fieldname": "rental_days",
+   "fieldtype": "Int",
+   "label": "Rental Days"
+  },
+  {
+   "fieldname": "fine_per_day",
+   "fieldtype": "Currency",
+   "label": "Fine Per Day"
+  },
+  {
+   "fieldname": "maximum_books",
+   "fieldtype": "Int",
+   "label": "Maximum Books"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2026-08-31 21:36:51.980362",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Library Settings",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

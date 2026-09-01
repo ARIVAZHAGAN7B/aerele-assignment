@@ -1,3 +1,4 @@
 frappe
+library_management
 scheduler_practice
 aerele_assignment

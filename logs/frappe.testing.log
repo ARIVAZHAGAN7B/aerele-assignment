@@ -1,0 +1,95 @@
+2026-08-31 22:15:30,632 INFO frappe.testing started with: site=practice.localhost, app=library_management, verbose=False, tests=(), force=False, profile=False, failfast=False, skip_before_tests=False, debug=False, selected_categories=[]
+2026-08-31 22:15:31,159 INFO frappe.testing Adding type validator in 'frappe' (up to level 0)...
+2026-08-31 22:15:31,406 INFO frappe.testing Adding type validator in 'scheduler_practice' (up to level 0)...
+2026-08-31 22:15:31,410 INFO frappe.testing Adding type validator in 'aerele_assignment' (up to level 0)...
+2026-08-31 22:15:31,421 INFO frappe.testing Adding type validator in 'library_management' (up to level 0)...
+2026-08-31 22:25:27,746 INFO frappe.testing started with: site=practice.localhost, app=library_management, module=library_management.doctype.book_rental.test_book_rental, verbose=False, tests=(), force=False, profile=False, failfast=False, skip_before_tests=False, debug=False, selected_categories=[]
+2026-08-31 22:25:28,289 INFO frappe.testing Adding type validator in 'frappe' (up to level 0)...
+2026-08-31 22:25:28,500 INFO frappe.testing Adding type validator in 'scheduler_practice' (up to level 0)...
+2026-08-31 22:25:28,503 INFO frappe.testing Adding type validator in 'aerele_assignment' (up to level 0)...
+2026-08-31 22:25:28,511 INFO frappe.testing Adding type validator in 'library_management' (up to level 0)...
+2026-08-31 22:25:28,517 ERROR frappe.testing Error discovering tests for library_management.doctype.book_rental.test_book_rental: No module named 'library_management.doctype'
+2026-08-31 22:26:14,563 INFO frappe.testing started with: site=practice.localhost, app=library_management, module=library_management.library_management.doctype.book_rental.test_book_rental, verbose=False, tests=(), force=False, profile=False, failfast=False, skip_before_tests=False, debug=False, selected_categories=[]
+2026-08-31 22:26:15,099 INFO frappe.testing Adding type validator in 'frappe' (up to level 0)...
+2026-08-31 22:26:15,302 INFO frappe.testing Adding type validator in 'scheduler_practice' (up to level 0)...
+2026-08-31 22:26:15,305 INFO frappe.testing Adding type validator in 'aerele_assignment' (up to level 0)...
+2026-08-31 22:26:15,313 INFO frappe.testing Adding type validator in 'library_management' (up to level 0)...
+2026-08-31 22:26:15,321 INFO frappe.testing Running "before_tests" hooks for integration tests on app: library_management
+2026-08-31 22:26:15,321 INFO frappe.testing Starting tests for app: library_management, category: integration
+2026-08-31 22:26:16,459 INFO frappe.testing  Synced  + Role                           via Book Rental
+2026-08-31 22:26:16,664 INFO frappe.testing          > Role (4 / 4)                   into Database & Journal / cls.globalTestRecords
+2026-08-31 22:26:16,665 INFO frappe.testing  Synced  + Report                         via Book Rental
+2026-08-31 22:26:16,730 INFO frappe.testing          > Report (1 / 1)                 into Database & Journal / cls.globalTestRecords
+2026-08-31 22:26:16,731 INFO frappe.testing  Synced  + Email Domain                   via Book Rental
+2026-08-31 22:26:16,843 INFO frappe.testing          > Email Domain (3 / 3)           into Database & Journal / cls.globalTestRecords
+2026-08-31 22:26:16,843 INFO frappe.testing  Synced  + Connected App                  via Book Rental
+2026-08-31 22:26:16,876 INFO frappe.testing          > Connected App (1 / 1)          into Database & Journal / cls.globalTestRecords
+2026-08-31 22:26:16,876 INFO frappe.testing  Synced  + Email Account                  via Book Rental
+2026-08-31 22:26:17,035 INFO frappe.testing          > Email Account (2 / 2)          into Database & Journal / cls.globalTestRecords
+2026-08-31 22:26:17,036 INFO frappe.testing  Synced  + User                           via Book Rental
+2026-08-31 22:26:18,408 INFO frappe.testing          > User (9 / 9)                   into Database & Journal / cls.globalTestRecords
+2026-08-31 22:26:18,500 INFO frappe.testing library_management.library_management.doctype.book_rental.test_book_rental.IntegrationTestBookRental
+2026-08-31 22:26:18,500 INFO frappe.testing records created: Book Rental (0), Book (0), Library Membership (0), Library (0), User (9), Email Account (2), Connected App (1), Email Domain (3), User Type (0), Workspace (0), Custom HTML Block (0), Country (0), Kanban Board (0), Dashboard Chart (0), Dashboard Chart Source (0), Number Card (0), Currency (0), Report (1), Letter Head (0), DocType (0), Email Template (0), Module Def (0), Package (0), Gender (0), Module Profile (0), Role Profile (0), Role (4), Domain (0), Language (0)
+2026-08-31 22:30:36,221 INFO frappe.testing started with: site=practice.localhost, app=library_management, module=library_management.library_management.doctype.book_rental.test_book_rental, verbose=False, tests=(), force=False, profile=False, failfast=False, skip_before_tests=False, debug=False, selected_categories=[]
+2026-08-31 22:30:36,767 INFO frappe.testing Adding type validator in 'frappe' (up to level 0)...
+2026-08-31 22:30:36,989 INFO frappe.testing Adding type validator in 'scheduler_practice' (up to level 0)...
+2026-08-31 22:30:36,992 INFO frappe.testing Adding type validator in 'aerele_assignment' (up to level 0)...
+2026-08-31 22:30:37,000 INFO frappe.testing Adding type validator in 'library_management' (up to level 0)...
+2026-08-31 22:30:37,007 INFO frappe.testing Running "before_tests" hooks for integration tests on app: library_management
+2026-08-31 22:30:37,007 INFO frappe.testing Starting tests for app: library_management, category: integration
+2026-08-31 22:30:38,162 INFO frappe.testing  Synced  + Role                           via Book Rental
+2026-08-31 22:30:38,216 INFO frappe.testing          > Role (0 / 4)                   into Database & Journal / cls.globalTestRecords
+2026-08-31 22:30:38,217 INFO frappe.testing  Synced  + Report                         via Book Rental
+2026-08-31 22:30:38,225 INFO frappe.testing          > Report (0 / 1)                 into Database & Journal / cls.globalTestRecords
+2026-08-31 22:30:38,226 INFO frappe.testing  Synced  + Email Domain                   via Book Rental
+2026-08-31 22:30:38,240 INFO frappe.testing          > Email Domain (0 / 3)           into Database & Journal / cls.globalTestRecords
+2026-08-31 22:30:38,241 INFO frappe.testing  Synced  + Connected App                  via Book Rental
+2026-08-31 22:30:38,485 INFO frappe.testing          > Connected App (1 / 1)          into Database & Journal / cls.globalTestRecords
+2026-08-31 22:30:38,485 INFO frappe.testing  Synced  + Email Account                  via Book Rental
+2026-08-31 22:30:38,616 INFO frappe.testing          > Email Account (1 / 2)          into Database & Journal / cls.globalTestRecords
+2026-08-31 22:30:38,616 INFO frappe.testing  Synced  + User                           via Book Rental
+2026-08-31 22:30:38,669 INFO frappe.testing          > User (0 / 9)                   into Database & Journal / cls.globalTestRecords
+2026-08-31 22:30:38,675 INFO frappe.testing library_management.library_management.doctype.book_rental.test_book_rental.IntegrationTestBookRental
+2026-08-31 22:30:38,675 INFO frappe.testing records created: Book Rental (0), Book (0), Library Membership (0), Library (0), User (9), Email Account (2), Connected App (1), Email Domain (3), User Type (0), Workspace (0), Custom HTML Block (0), Country (0), Kanban Board (0), Dashboard Chart (0), Dashboard Chart Source (0), Number Card (0), Currency (0), Report (1), Letter Head (0), DocType (0), Email Template (0), Module Def (0), Package (0), Gender (0), Module Profile (0), Role Profile (0), Role (4), Domain (0), Language (0)
+2026-08-31 22:35:28,478 INFO frappe.testing started with: site=practice.localhost, app=library_management, module=library_management.library_management.doctype.book_rental.test_book_rental, verbose=False, tests=(), force=False, profile=False, failfast=False, skip_before_tests=False, debug=False, selected_categories=[]
+2026-08-31 22:35:29,002 INFO frappe.testing Adding type validator in 'frappe' (up to level 0)...
+2026-08-31 22:35:29,214 INFO frappe.testing Adding type validator in 'scheduler_practice' (up to level 0)...
+2026-08-31 22:35:29,217 INFO frappe.testing Adding type validator in 'aerele_assignment' (up to level 0)...
+2026-08-31 22:35:29,226 INFO frappe.testing Adding type validator in 'library_management' (up to level 0)...
+2026-08-31 22:35:29,234 INFO frappe.testing Running "before_tests" hooks for integration tests on app: library_management
+2026-08-31 22:35:29,234 INFO frappe.testing Starting tests for app: library_management, category: integration
+2026-08-31 22:35:30,332 INFO frappe.testing  Synced  + Role                           via Book Rental
+2026-08-31 22:35:30,384 INFO frappe.testing          > Role (0 / 4)                   into Database & Journal / cls.globalTestRecords
+2026-08-31 22:35:30,385 INFO frappe.testing  Synced  + Report                         via Book Rental
+2026-08-31 22:35:30,393 INFO frappe.testing          > Report (0 / 1)                 into Database & Journal / cls.globalTestRecords
+2026-08-31 22:35:30,394 INFO frappe.testing  Synced  + Email Domain                   via Book Rental
+2026-08-31 22:35:30,407 INFO frappe.testing          > Email Domain (0 / 3)           into Database & Journal / cls.globalTestRecords
+2026-08-31 22:35:30,408 INFO frappe.testing  Synced  + Connected App                  via Book Rental
+2026-08-31 22:35:30,639 INFO frappe.testing          > Connected App (1 / 1)          into Database & Journal / cls.globalTestRecords
+2026-08-31 22:35:30,640 INFO frappe.testing  Synced  + Email Account                  via Book Rental
+2026-08-31 22:35:30,778 INFO frappe.testing          > Email Account (1 / 2)          into Database & Journal / cls.globalTestRecords
+2026-08-31 22:35:30,778 INFO frappe.testing  Synced  + User                           via Book Rental
+2026-08-31 22:35:30,830 INFO frappe.testing          > User (0 / 9)                   into Database & Journal / cls.globalTestRecords
+2026-08-31 22:35:30,836 INFO frappe.testing library_management.library_management.doctype.book_rental.test_book_rental.IntegrationTestBookRental
+2026-08-31 22:35:30,836 INFO frappe.testing records created: Book Rental (0), Book (0), Library Membership (0), Library (0), User (9), Email Account (2), Connected App (1), Email Domain (3), User Type (0), Workspace (0), Custom HTML Block (0), Country (0), Kanban Board (0), Dashboard Chart (0), Dashboard Chart Source (0), Number Card (0), Currency (0), Report (1), Letter Head (0), DocType (0), Email Template (0), Module Def (0), Package (0), Gender (0), Module Profile (0), Role Profile (0), Role (4), Domain (0), Language (0)
+2026-08-31 22:37:07,338 INFO frappe.testing started with: site=practice.localhost, app=library_management, module=library_management.library_management.doctype.book_rental.test_book_rental, verbose=False, tests=(), force=False, profile=False, failfast=False, skip_before_tests=False, debug=False, selected_categories=[]
+2026-08-31 22:37:07,878 INFO frappe.testing Adding type validator in 'frappe' (up to level 0)...
+2026-08-31 22:37:08,083 INFO frappe.testing Adding type validator in 'scheduler_practice' (up to level 0)...
+2026-08-31 22:37:08,086 INFO frappe.testing Adding type validator in 'aerele_assignment' (up to level 0)...
+2026-08-31 22:37:08,094 INFO frappe.testing Adding type validator in 'library_management' (up to level 0)...
+2026-08-31 22:37:08,100 INFO frappe.testing Running "before_tests" hooks for integration tests on app: library_management
+2026-08-31 22:37:08,100 INFO frappe.testing Starting tests for app: library_management, category: integration
+2026-08-31 22:37:09,188 INFO frappe.testing  Synced  + Role                           via Book Rental
+2026-08-31 22:37:09,237 INFO frappe.testing          > Role (0 / 4)                   into Database & Journal / cls.globalTestRecords
+2026-08-31 22:37:09,238 INFO frappe.testing  Synced  + Report                         via Book Rental
+2026-08-31 22:37:09,246 INFO frappe.testing          > Report (0 / 1)                 into Database & Journal / cls.globalTestRecords
+2026-08-31 22:37:09,247 INFO frappe.testing  Synced  + Email Domain                   via Book Rental
+2026-08-31 22:37:09,261 INFO frappe.testing          > Email Domain (0 / 3)           into Database & Journal / cls.globalTestRecords
+2026-08-31 22:37:09,261 INFO frappe.testing  Synced  + Connected App                  via Book Rental
+2026-08-31 22:37:09,499 INFO frappe.testing          > Connected App (1 / 1)          into Database & Journal / cls.globalTestRecords
+2026-08-31 22:37:09,500 INFO frappe.testing  Synced  + Email Account                  via Book Rental
+2026-08-31 22:37:09,626 INFO frappe.testing          > Email Account (1 / 2)          into Database & Journal / cls.globalTestRecords
+2026-08-31 22:37:09,626 INFO frappe.testing  Synced  + User                           via Book Rental
+2026-08-31 22:37:09,682 INFO frappe.testing          > User (0 / 9)                   into Database & Journal / cls.globalTestRecords
+2026-08-31 22:37:09,688 INFO frappe.testing library_management.library_management.doctype.book_rental.test_book_rental.IntegrationTestBookRental
+2026-08-31 22:37:09,688 INFO frappe.testing records created: Book Rental (0), Book (0), Library Membership (0), Library (0), User (9), Email Account (2), Connected App (1), Email Domain (3), User Type (0), Workspace (0), Custom HTML Block (0), Country (0), Kanban Board (0), Dashboard Chart (0), Dashboard Chart Source (0), Number Card (0), Currency (0), Report (1), Letter Head (0), DocType (0), Email Template (0), Module Def (0), Package (0), Gender (0), Module Profile (0), Role Profile (0), Role (4), Domain (0), Language (0)

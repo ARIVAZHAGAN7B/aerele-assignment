@@ -1848,3 +1848,89 @@ index creation(creation))
 			COLLATE=utf8mb4_unicode_ci
 2026-08-30 17:51:18,678 WARNING database DDL Query made to DB:
 ALTER TABLE `tabattachment` ADD COLUMN `image` text
+2026-08-31 21:22:58,411 WARNING database DDL Query made to DB:
+create table `tabLibrary` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus tinyint not null default '0',
+			idx int not null default '0',
+			`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+index creation(creation))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2026-08-31 21:24:18,816 WARNING database DDL Query made to DB:
+ALTER TABLE `tabLibrary` ADD COLUMN `library_name` varchar(140) UNIQUE, ADD COLUMN `address` text, ADD COLUMN `contact_number` varchar(140), ADD COLUMN `email` varchar(140), ADD COLUMN `status` varchar(140)
+2026-08-31 21:24:18,818 WARNING database DDL Query made to DB:
+ALTER TABLE `tabLibrary` ADD UNIQUE INDEX IF NOT EXISTS library_name (`library_name`)
+2026-08-31 21:25:20,081 WARNING database DDL Query made to DB:
+create table `tabBook` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus tinyint not null default '0',
+			idx int not null default '0',
+			`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+index creation(creation))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2026-08-31 21:27:07,044 WARNING database DDL Query made to DB:
+ALTER TABLE `tabBook` ADD COLUMN `title` varchar(140) UNIQUE, ADD COLUMN `author` varchar(140), ADD COLUMN `isbn` varchar(140), ADD COLUMN `library` varchar(140), ADD COLUMN `total_copies` int(11) NOT NULL DEFAULT 0, ADD COLUMN `available_copies` int(11) NOT NULL DEFAULT 0, ADD COLUMN `status` varchar(140)
+2026-08-31 21:27:07,046 WARNING database DDL Query made to DB:
+ALTER TABLE `tabBook` ADD UNIQUE INDEX IF NOT EXISTS title (`title`)
+2026-08-31 21:28:01,088 WARNING database DDL Query made to DB:
+create table `tabLibrary Membership` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus tinyint not null default '0',
+			idx int not null default '0',
+			`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+index creation(creation))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2026-08-31 21:30:23,161 WARNING database DDL Query made to DB:
+ALTER TABLE `tabLibrary Membership` ADD COLUMN `user` varchar(140) UNIQUE, ADD COLUMN `library` varchar(140), ADD COLUMN `start_date` datetime(6), ADD COLUMN `end_date` datetime(6), ADD COLUMN `status` varchar(140)
+2026-08-31 21:30:23,162 WARNING database DDL Query made to DB:
+ALTER TABLE `tabLibrary Membership` ADD UNIQUE INDEX IF NOT EXISTS user (`user`)
+2026-08-31 21:31:21,377 WARNING database DDL Query made to DB:
+create table `tabBook Rental` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus tinyint not null default '0',
+			idx int not null default '0',
+			`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+index creation(creation))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2026-08-31 21:34:42,366 WARNING database DDL Query made to DB:
+ALTER TABLE `tabBook Rental` ADD COLUMN `user` varchar(140), ADD COLUMN `membership` varchar(140), ADD COLUMN `library` varchar(140), ADD COLUMN `book` varchar(140), ADD COLUMN `rental_date` datetime(6), ADD COLUMN `due_date` datetime(6), ADD COLUMN `return_date` datetime(6), ADD COLUMN `status` varchar(140), ADD COLUMN `fine_amount` decimal(21,9) NOT NULL DEFAULT 0.0
